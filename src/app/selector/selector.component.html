@@ -1,0 +1,5 @@
+<div>
+  <i class="material-icons icon" (click)="add(-1)">arrow_left</i>
+  <span>{{ dateService.date | async | momentPipe }}</span>
+  <i class="material-icons icon" (click)="add(1)">arrow_right</i>
+</div>

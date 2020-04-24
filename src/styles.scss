@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #0b9c71;
+  --dark-color: #2b3834;
+  --light-color: #3affc4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  &:hover {
+    text-decoration: none;
+    color: #666666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.4rem;
+  color: var(--dark-color);
+  outline: none;
+}
+
+p {
+  color: var(--primary-color);
+}

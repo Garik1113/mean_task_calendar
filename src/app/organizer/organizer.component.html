@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let task of taskService.tasks.value">
+    {{ task.title }}
+    <button (click)="deleteTask(task._id)">&times;</button>
+  </li>
+</ul>
+<form>
+  <input
+    type="text"
+    name="title"
+    placeholder="Name of Task"
+    [(ngModel)]="taskTitle"
+  />
+  <button type="button" (click)="addNewTask()">Add</button>
+</form>

@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.icon {
+  cursor: pointer;
+  &:hover {
+    color: rgb(0, 238, 255);
+  }
+}

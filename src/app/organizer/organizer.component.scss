@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  align-items: center;
+  input {
+    border: 2px solid grey;
+  }
+  button {
+    padding: 0.4rem;
+    width: 80px;
+    background: rgb(255, 0, 140);
+    border: 2px solid rgb(255, 0, 140);
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
+
+li {
+  background: rgb(18, 155, 209);
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.4rem auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    padding: 0.4rem;
+    border: none;
+    background: rgb(185, 7, 67);
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover {
+      background: rgb(235, 9, 84);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<table>
+  <thead>
+    <tr>
+      <th class="week-name">Sun</th>
+      <th class="week-name">Mon</th>
+      <th class="week-name">Tue</th>
+      <th class="week-name">Wen</th>
+      <th class="week-name">Thu</th>
+      <th class="week-name">Fri</th>
+      <th class="week-name">Sat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let week of calendar">
+      <td
+        *ngFor="let day of week.days"
+        class="day-name"
+        [class.active]="day.active"
+        [class.disabled]="day.disabled"
+        [class.selected]="day.selected"
+        (click)="selectDay(day.value)"
+      >
+        {{ day.value | calendarPipe }}
+      </td>
+    </tr>
+  </tbody>
+</table>
